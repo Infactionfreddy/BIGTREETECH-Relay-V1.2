@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "reg51.h": "c",
+        "8052.h": "c",
+        "8051.h": "c",
+        "stc15fxxxx.h": "c",
+        "stc15.h": "c",
+        "STC15.H": "cpp",
+        "STC15xx_USART1.C": "cpp",
+        "uart.h": "c"
+    }
+}
