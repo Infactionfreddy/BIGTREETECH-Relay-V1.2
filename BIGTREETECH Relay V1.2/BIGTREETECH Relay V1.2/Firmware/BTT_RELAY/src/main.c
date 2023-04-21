@@ -9,7 +9,7 @@
 #endif
    #define RELAY P55
    #define POWER_IN_PIN P32
-   #define POWER_LOST_DET P33
+   #define POWER_SHORTCIRCUIT_DET P33
    #define INIT_PIN //Pin init not needed
 
    void _delay_ms(unsigned char ms)
@@ -31,9 +31,6 @@
 
 void setup(){
     INIT_PIN
-    
-    POWER_IN_PIN=LOW;
-    POWER_LOST_DET=LOW;
     RELAY=LOW;
 }
 
@@ -49,14 +46,16 @@ void main(){
             _delay_ms(500);
             }
             
-        else if(POWER_IN_PIN=0){
+        else if(POWER_IN_PIN==0){
             RELAY=LOW;
             _delay_ms(500);
             }
-        /*else if(POWER_LOST_DET=1){
-                _nop_();
+        else if(POWER_SHORTCIRCUIT_DET==1){
+                RELAY=HIGH;
+                while(1){
+                 }
             
-            }*/
+            }
         
 
     }
