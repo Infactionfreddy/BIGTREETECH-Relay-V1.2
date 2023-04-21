@@ -38,24 +38,29 @@ void main(){
     
 
     setup();
+   _delay_ms(10000);
     while (1)
     {
-     _delay_ms(10000);
-        if(POWER_IN_PIN==1){
+       if(POWER_SHORTCIRCUIT_DET==0){
+                RELAY=HIGH;
+                for(;;){
+                 }
+            
+       }
+       else if(POWER_IN_PIN==1){
+               _delay_ms(300);
+               if(POWER_IN_PIN==1){
             RELAY=HIGH;
             _delay_ms(500);
             }
-            
+       }
         else if(POWER_IN_PIN==0){
+               _delay_ms(300);
+               if(POWER_IN_PIN==0){
             RELAY=LOW;
             _delay_ms(500);
             }
-        else if(POWER_SHORTCIRCUIT_DET==1){
-                RELAY=HIGH;
-                while(1){
-                 }
-            
-            }
+        }
         
 
     }
