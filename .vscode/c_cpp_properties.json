@@ -1,0 +1,41 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/frede/Documents/PlatformIO/Projects/stc-btt-relay/include",
+                "/Users/frede/Documents/PlatformIO/Projects/stc-btt-relay/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/frede/Documents/PlatformIO/Projects/stc-btt-relay/include",
+                    "/Users/frede/Documents/PlatformIO/Projects/stc-btt-relay/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=11059200L",
+                "HEAP_SIZE=64",
+                "PLATFORMIO=60118",
+                "STC15W20XS",
+                "STC15W201S",
+                "NAKED_ARCH_MCS51",
+                "NAKED_MCS51_STC15W20XS",
+                ""
+            ],
+            "compilerPath": "/Users/frede/.platformio/packages/toolchain-sdcc/bin/sdcc",
+            "compilerArgs": [
+                "-mmcs51",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
